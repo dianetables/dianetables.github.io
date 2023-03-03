@@ -96,10 +96,9 @@ body, html{
   height:100%;
 }
 
+
+
 .parallax{
-  /* The image used */
-  /* background-image: url("../assets/city.png"); */
-  /* Set a specific height */
   height: 90%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -107,6 +106,18 @@ body, html{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 480px) {
+  .parallax {
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+} 
+
+
 
 hr {
   margin: 1rem 0;
